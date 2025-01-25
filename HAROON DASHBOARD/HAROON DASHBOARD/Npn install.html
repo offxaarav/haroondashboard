@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    color: #ffffff;
+}
+
+        .card {
+            background-color: #242424;
+            border: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+        .icon {
+            font-size: 1.5rem;
+            color: #9c88ff;
+            transition: color 0.3s;
+        }
+        .icon:hover {
+            color: #ffffff;
+        }
+        .status-badge {
+            background-color: #28a745;
+            color: #fff;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.3rem;
+            font-size: 0.8rem;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .btn {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn:hover {
+            background-color: #9c88ff;
+            color: #ffffff;
+        }
+        .list-group-item {
+            transition: background-color 0.3s;
+        }
+        .list-group-item:hover {
+            background-color: #9c88ff;
+        }
+        img.partner-logo {
+            transition: transform 0.3s;
+        }
+        img.partner-logo:hover {
+            transform: scale(1.2);
+        }
+        .partner-logo {
+            position: relative;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .partner-logo:hover {
+            transform: scale(1.2);
+            color: #9c88ff;
+        }
+        .partner-logo:hover::after {
+            content: attr(data-name);
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #444;
+            color: #fff;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.3rem;
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+        .workflow-highlight {
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .workflow-highlight:hover {
+            background-color: #444;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <!-- Row 1: Statistics -->
+        <div class="row text-center mb-4">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h2>43+</h2>
+                    <p>Projects</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h2>23+</h2>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h2>5+</h2>
+                    <p>Year Expertise</p>
+                </div>
+            </div>
+        
+        </div>
+
+    <!-- Row 2: Profile Section -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card p-3">
+                <div class="d-flex align-items-center">
+                    <img src="img folder/retouch.jpeg" alt="Profile Picture" class="rounded-circle me-3"
+                    style="width: 100px; height: 100px; object-fit: cover;">
+                    <div>
+                        <span class="status-badge">AVAILABLE TO WORK</span>
+                        <h4>Muhammed Haroon </h4>
+                        <p>I'm a <span class="text-primary">Designer</span></p>
+                        <!-- <button class="btn btn-outline-light btn-sm">Resume</button> -->
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <p><i class="icon bi-geo-alt"></i> India</p>
+                    <p><i class="icon bi-translate"></i> English - Tamil - Urdu - Hindi</p>
+                    <p><i class="icon bi-code-slash"></i> Software Engineer</p>
+                </div>
+            </div>
+        </div>
+<!-- Row 3: Workflow Highlights and Online Presence -->
+        <div class="col-md-4">
+            <div class="card p-3">
+                <h5>Workflow Highlights</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-transparent text-light workflow-highlight">
+                        <a href="goal& objectives.html" class="text-light text-decoration-none" target="_blank">Goals & Objectives</a>
+                    </li>
+                    <li class="list-group-item bg-transparent text-light workflow-highlight">
+                        <a href="research.html" class="text-light text-decoration-none" target="_blank">Research</a>
+                    </li>
+                    <li class="list-group-item bg-transparent text-light workflow-highlight">
+                        <a href="wireframe.html" class="text-light text-decoration-none" target="_blank">Wireframe</a>
+                    </li>
+                    <li class="list-group-item bg-transparent text-light workflow-highlight">
+                        <a href="prototyping.html" class="text-light text-decoration-none" target="_blank">Prototyping</a>
+                    </li>
+                    <li class="list-group-item bg-transparent text-light workflow-highlight">
+                        <a href="muhammed haroon (2).pdf" class="text-light text-decoration-none" target="_blank">Download Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            <!-- Testimonials -->
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Rave Reviews Showcase</h5>
+                    <div class="border-bottom py-2 d-flex align-items-start">
+                        <img src="img folder/3d Cartoon Images - Free Download on Freepik (1).jpeg" alt="Sarah Avatar" class="avatar me-3">
+                        <div>
+                            <p><strong>Sarah J</strong> - Madurai, Ind</p>
+                            <p>"Muhammed's design skills are unparalleled. He transformed my vague ideas into a stunning website that perfectly represents my brand."</p>
+                        </div>
+                    </div>
+                    <div class="border-bottom py-2 d-flex align-items-start">
+                        <img src="img folder/Boy Character Pictures _ Freepik.jpeg" alt="David Avatar" class="avatar me-3">
+                        <div>
+                            <p><strong>David S</strong> - Chennai, Ind</p>
+                            <p>"Working with Muhammed was a breeze. He not only delivered a sleek and functional website but also provided excellent support throughout the process."</p>
+                        </div>
+                    </div>
+                    <!-- <div class="py-2 d-flex align-items-start">
+                        <img src="3d Cartoon Images - Free Download on Freepik (1).jpeg" alt="Emma Avatar" class="avatar me-3">
+                        <div>
+                            <p><strong>Emma Brown</strong> - Sydney, Australia</p>
+                            <p>"I highly recommend Muhammed. His attention to detail and creative approach made my project a huge success."</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 4: Contact Section -->
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card p-3">
+                    <h5>Satisfied Clients</h5>
+                    <div class="d-flex flex-wrap gap-5 justify-content-space-between">
+                        <i class="fab fa-youtube fa-2x partner-logo" data-name="YouTube"></i>
+                        <i class="fab fa-twitter fa-2x partner-logo" data-name="Twitter"></i>
+                        <i class="fab fa-tiktok fa-2x partner-logo" data-name="TikTok"></i>
+                        <i class="fab fa-instagram fa-2x partner-logo" data-name="Instagram"></i>
+                        <i class="fab fa-snapchat fa-2x partner-logo" data-name="Snapchat"></i>
+                        <i class="fab fa-dribbble fa-2x partner-logo" data-name="Dribbble"></i>
+                        <i class="fab fa-pinterest fa-2x partner-logo" data-name="Pinterest"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-3">
+                    <h5>Let's Work Together</h5>
+                    <p>Let's make magic happen together!</p>
+                    <button class="btn btn-primary w-100 mb-2">Email Me</button>
+                    <button class="btn btn-outline-light w-100">Schedule a Call</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Online Presence</h5>
+                    <p><i class="fab fa-twitter"></i>   @offx.aarav</p>
+                    <p><i class="fab fa-instagram"></i>   @offx.aarav</p>
+                    <p><i class="fab fa-linkedin"></i>    @offx.aarav</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
